@@ -1,12 +1,10 @@
 import { auth }
 
-from "../firebase.js";
+from "./firebase.js";
 
 import {
 
-    onAuthStateChanged,
-
-    signOut
+    onAuthStateChanged
 
 }
 
@@ -26,7 +24,7 @@ onAuthStateChanged(auth, (user) => {
 
     else{
 
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
 
     }
 
