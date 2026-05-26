@@ -32,13 +32,9 @@ registerBtn.addEventListener("click", async () => {
     try{
 
         await createUserWithEmailAndPassword(
-
             auth,
-
             email,
-
             password
-
         );
 
         alert("Account created successfully");
@@ -62,18 +58,12 @@ loginBtn.addEventListener("click", async () => {
     try{
 
         await signInWithEmailAndPassword(
-
             auth,
-
             email,
-
             password
-
         );
 
-        alert("Login successful");
-
-        window.location.href = "pages/profile.html";
+        window.location.href = "profile.html";
 
     }
 
